@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.option button {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option button:hover {
+  background: #e6e6e6;
+}
+.option button.active {
+  background: #ff4d4d;
+  color: white;
+  border-color: #ff4d4d;
+}
+
+.nextprev {
+  margin-bottom: 20px;
+}
+#next {
+  float: right;
+}
+#prev {
+  float: left;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.submit {
+  width: 100%;
+  margin-top: 100px;
+  display: none;
+}
+button:hover {
+  background: #007bff;
+  color: white;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button#prev {
+  background: #f1f1f1;
+  color: #333;
+}
+
+button#next {
+  background: #007bff;
+  color: white;
+}
+button#prev:hover {
+  background: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .option button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .option button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .nextprev {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
